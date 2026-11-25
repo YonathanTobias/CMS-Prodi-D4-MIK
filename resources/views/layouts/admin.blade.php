@@ -51,7 +51,7 @@
     <!-- Dynamic Theme Color Variables -->
     <style>
         :root {
-            --color-primary: {{ get_setting('theme_primary_color', '#7c3aed') }};
+            --color-primary: {{ get_setting('theme_primary_color', '#0e7490') }};
         }
     </style>
 </head>
@@ -208,6 +208,16 @@
                     @if(get_setting('feature_page_builder_enabled', '0') == '1')
                         <span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-purple-500/20 text-purple-300 border border-purple-500/30">Studio</span>
                     @endif
+                </a>
+
+                <a href="{{ route('admin.settings.vision-mission') }}" class="group relative flex items-center px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-150 {{ request()->routeIs('admin.settings.vision-mission*') ? 'bg-theme-primary text-white font-bold shadow-lg shadow-theme-primary/25' : 'text-slate-400 hover:text-white hover:bg-slate-800/80 hover:translate-x-0.5' }}">
+                    @if(request()->routeIs('admin.settings.vision-mission*'))
+                        <span class="absolute left-0 top-2 bottom-2 w-1 rounded-r-full bg-white"></span>
+                    @endif
+                    <div class="w-7 h-7 rounded-lg flex items-center justify-center mr-2.5 transition {{ request()->routeIs('admin.settings.vision-mission*') ? 'bg-white/20 text-white' : 'bg-slate-800 text-slate-400 group-hover:text-white group-hover:bg-slate-700/80' }}">
+                        <i class="fa-solid fa-bullseye text-xs"></i>
+                    </div>
+                    <span>Visi & Misi Prodi</span>
                 </a>
             </div>
 
@@ -377,8 +387,8 @@
         <!-- Flash Message Alerts -->
         @if(session('success'))
         <div class="px-4 sm:px-8 mt-6">
-            <div class="bg-purple-50 dark:bg-purple-950/60 border-l-4 border-purple-500 p-4 rounded-r-xl text-purple-900 dark:text-purple-200 text-xs font-medium flex items-center justify-between shadow-sm">
-                <div class="flex items-center"><i class="fa-solid fa-circle-check mr-2 text-purple-600 dark:text-purple-400 text-base"></i> {{ session('success') }}</div>
+            <div class="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded-r-xl text-emerald-800 text-xs font-medium flex items-center justify-between shadow-sm">
+                <div class="flex items-center"><i class="fa-solid fa-circle-check mr-2 text-emerald-600 text-base"></i> {{ session('success') }}</div>
             </div>
         </div>
         @endif
