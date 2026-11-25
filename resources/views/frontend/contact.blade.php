@@ -63,7 +63,7 @@
                     </div>
 
                     <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-lg bg-sky-50 text-theme-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <div class="w-8 h-8 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-phone"></i>
                         </div>
                         <div>
@@ -74,7 +74,7 @@
 
                     @if(get_setting('contact_whatsapp'))
                     <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <div class="w-8 h-8 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-brands fa-whatsapp"></i>
                         </div>
                         <div>

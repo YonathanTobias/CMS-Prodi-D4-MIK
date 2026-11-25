@@ -271,7 +271,7 @@
                         </div>
                     </div>
 
-                    <a href="{{ route('contact') }}" class="w-full mt-2 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs uppercase tracking-wider text-center block transition shadow">
+                    <a href="{{ route('contact') }}" class="w-full mt-2 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs uppercase tracking-wider text-center block transition shadow">
                         <i class="fa-brands fa-whatsapp mr-1.5"></i> Hubungi / Konsultasi
                     </a>
                 </div>
@@ -311,8 +311,8 @@
                 </span>
                 @endif
                 @if(get_setting('prodi_accreditation'))
-                <span class="inline-flex items-center px-3 py-1 rounded-lg text-xs font-bold bg-emerald-50 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-700">
-                    <i class="fa-solid fa-circle-check text-emerald-600 dark:text-emerald-400 mr-1.5"></i> {{ get_setting('prodi_accreditation') }}
+                <span class="inline-flex items-center px-3 py-1 rounded-lg text-xs font-bold bg-violet-50 dark:bg-violet-950/60 text-violet-800 dark:text-violet-300 border border-violet-200 dark:border-violet-800">
+                    <i class="fa-solid fa-circle-check text-violet-600 dark:text-violet-400 mr-1.5"></i> {{ get_setting('prodi_accreditation') }}
                 </span>
                 @endif
             </div>
@@ -348,7 +348,7 @@
             <div class="lg:col-span-7 bg-white dark:bg-slate-900 rounded-2xl p-7 shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col justify-between relative group hover:shadow-md transition">
                 <div class="space-y-6">
                     <div class="flex items-center space-x-3">
-                        <div class="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl shadow-sm border border-emerald-100 dark:border-emerald-800">
+                        <div class="w-12 h-12 rounded-2xl bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 flex items-center justify-center text-xl shadow-sm border border-purple-100 dark:border-purple-800">
                             <i class="fa-solid fa-bullseye"></i>
                         </div>
                         <div>
@@ -508,19 +508,19 @@
                         </p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                             <div class="flex items-center space-x-2 text-xs text-slate-200">
-                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <i class="fa-solid fa-check text-purple-400"></i>
                                 <span>{{ get_setting('info_box_point_1', (get_setting('enable_services', '1') !== '0' ? 'Alur Prosedur Jelas' : 'Informasi Resmi Terkini')) }}</span>
                             </div>
                             <div class="flex items-center space-x-2 text-xs text-slate-200">
-                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <i class="fa-solid fa-check text-purple-400"></i>
                                 <span>{{ get_setting('info_box_point_2', (get_setting('enable_services', '1') !== '0' ? 'Formulir Siap Download' : 'Unduhan Dokumen & Formulir')) }}</span>
                             </div>
                             <div class="flex items-center space-x-2 text-xs text-slate-200">
-                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <i class="fa-solid fa-check text-purple-400"></i>
                                 <span>{{ get_setting('info_box_point_3', (get_setting('enable_services', '1') !== '0' ? 'Bantuan & Konsultasi Ramah' : 'Agenda & Kegiatan Aktif')) }}</span>
                             </div>
                             <div class="flex items-center space-x-2 text-xs text-slate-200">
-                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <i class="fa-solid fa-check text-purple-400"></i>
                                 <span>{{ get_setting('info_box_point_4', (get_setting('enable_services', '1') !== '0' ? 'Pelayanan Cepat & Akurat' : 'Layanan Kontak Responsif')) }}</span>
                             </div>
                         </div>
@@ -716,7 +716,7 @@
             <div class="lg:col-span-5 space-y-6">
                 <div class="flex justify-between items-center">
                     <div>
-                        <div class="text-xs uppercase tracking-wider text-emerald-400 font-bold mb-1">Pusat Unduhan</div>
+                        <div class="text-xs uppercase tracking-wider text-purple-400 font-bold mb-1">Pusat Unduhan</div>
                         <h2 class="text-2xl font-bold">Buku Panduan & Formulir</h2>
                     </div>
                     <a href="{{ route('documents') }}" class="text-xs text-slate-300 hover:text-white font-medium flex items-center">
@@ -736,7 +736,7 @@
                                 <div class="text-[10px] text-slate-400">{{ $doc->file_type }} • {{ $doc->file_size }}</div>
                             </div>
                         </div>
-                        <a href="{{ route('documents.download', $doc->id) }}" class="p-2 rounded-lg bg-slate-700 hover:bg-emerald-600 text-slate-200 hover:text-white transition text-xs flex-shrink-0" title="Unduh Dokumen">
+                        <a href="{{ route('documents.download', $doc->id) }}" class="p-2 rounded-lg bg-slate-700 hover:bg-purple-600 text-slate-200 hover:text-white transition text-xs flex-shrink-0" title="Unduh Dokumen">
                             <i class="fa-solid fa-download"></i>
                         </a>
                     </div>

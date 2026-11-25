@@ -33,11 +33,11 @@
         <!-- Visi -->
         <div class="md:col-span-5 bg-white rounded-2xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between">
             <div class="space-y-4">
-                <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
+                <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl">
                     <i class="fa-solid fa-compass"></i>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900">Visi Divisi</h3>
-                <p class="text-sm text-slate-700 leading-relaxed italic bg-emerald-50/60 p-4 rounded-xl border border-emerald-100">
+                <h3 class="text-lg font-bold text-slate-900">Visi Program Studi</h3>
+                <p class="text-sm text-slate-700 leading-relaxed italic bg-purple-50/60 p-4 rounded-xl border border-purple-100">
                     "{{ get_setting('vision') }}"
                 </p>
             </div>
@@ -45,7 +45,7 @@
 
         <!-- Misi -->
         <div class="md:col-span-7 bg-white rounded-2xl p-8 shadow-sm border border-slate-200 space-y-4">
-            <div class="w-12 h-12 rounded-xl bg-sky-50 text-theme-primary flex items-center justify-center text-xl">
+            <div class="w-12 h-12 rounded-xl bg-purple-50 text-theme-primary flex items-center justify-center text-xl">
                 <i class="fa-solid fa-bullseye"></i>
             </div>
             <h3 class="text-lg font-bold text-slate-900">Misi Divisi</h3>

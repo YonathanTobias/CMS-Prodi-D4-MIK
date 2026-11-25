@@ -216,8 +216,8 @@
     <!-- Flash Notification Alerts -->
     @if(session('success'))
         <div class="max-w-7xl mx-auto px-4 mt-4 w-full">
-            <div class="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded-r-lg text-emerald-800 text-sm flex items-center justify-between shadow-sm">
-                <div class="flex items-center"><i class="fa-solid fa-circle-check mr-2 text-emerald-600 text-lg"></i> {{ session('success') }}</div>
+            <div class="bg-purple-50 dark:bg-purple-950/60 border-l-4 border-purple-500 p-4 rounded-r-lg text-purple-900 dark:text-purple-200 text-sm flex items-center justify-between shadow-sm">
+                <div class="flex items-center"><i class="fa-solid fa-circle-check mr-2 text-purple-600 dark:text-purple-400 text-lg"></i> {{ session('success') }}</div>
             </div>
         </div>
     @endif

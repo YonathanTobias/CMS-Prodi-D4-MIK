@@ -57,7 +57,7 @@
                 </a>
 
                 <a href="{{ route('dosen-tendik', array_merge(request()->except('type', 'page'), ['type' => 'tendik'])) }}"
-                   class="px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center {{ $type === 'tendik' ? 'bg-emerald-600 text-white shadow-sm' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700' }}">
+                   class="px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center {{ $type === 'tendik' ? 'bg-purple-700 text-white shadow-sm' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700' }}">
                     <i class="fa-solid fa-user-gear mr-2"></i>
                     <span>Tenaga Kependidikan</span>
                     <span class="ml-2 px-2 py-0.5 rounded-full text-[10px] {{ $type === 'tendik' ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300' }}">{{ $totalTendik }}</span>
@@ -101,7 +101,7 @@
                     <div class="flex items-start justify-between gap-3">
                         <!-- Photo Avatar -->
                         <div class="relative">
-                            <div class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 border-2 {{ $tm->type === 'tendik' ? 'border-emerald-500/40' : 'border-purple-500/40' }} shadow-sm group-hover:scale-105 transition-transform duration-300">
+                            <div class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 border-2 {{ $tm->type === 'tendik' ? 'border-purple-400/50 dark:border-purple-500/50' : 'border-violet-500/50 dark:border-violet-400/50' }} shadow-sm group-hover:scale-105 transition-transform duration-300">
                                 @if($tm->photo)
                                     <img src="{{ $tm->photo }}" alt="{{ $tm->name }}" class="w-full h-full object-cover" loading="lazy" decoding="async">
                                 @else
@@ -110,7 +110,7 @@
                                     </div>
                                 @endif
                             </div>
-                            <div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full flex items-center justify-center text-[11px] text-white shadow {{ $tm->type === 'tendik' ? 'bg-emerald-600' : 'bg-purple-600' }}">
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full flex items-center justify-center text-[11px] text-white shadow {{ $tm->type === 'tendik' ? 'bg-purple-700' : 'bg-purple-600' }}">
                                 <i class="fa-solid {{ $tm->type === 'tendik' ? 'fa-user-gear' : 'fa-laptop-medical' }}"></i>
                             </div>
                         </div>
@@ -118,7 +118,7 @@
                         <!-- Badges -->
                         <div class="flex flex-col items-end gap-1.5">
                             @if($tm->type === 'tendik')
-                                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800">
+                                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-purple-100 text-purple-800 dark:bg-purple-950/80 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
                                     Tendik
                                 </span>
                             @else
@@ -181,8 +181,8 @@
                     @endif
 
                     @if($tm->phone)
-                        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $tm->phone) }}" target="_blank" class="text-emerald-600 dark:text-emerald-400 hover:underline transition flex items-center font-medium text-[11px]" title="Hubungi WhatsApp">
-                            <i class="fa-brands fa-whatsapp mr-1 text-xs"></i> Hubungi
+                        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $tm->phone) }}" target="_blank" class="text-purple-600 dark:text-purple-400 hover:underline transition flex items-center font-medium text-[11px]" title="Hubungi WhatsApp">
+                            <i class="fa-brands fa-whatsapp mr-1 text-xs text-purple-500 dark:text-purple-400"></i> Hubungi
                         </a>
                     @endif
                 </div>
