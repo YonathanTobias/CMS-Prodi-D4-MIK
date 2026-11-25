@@ -4,7 +4,7 @@
             @foreach($block['items'] ?? [] as $st)
             <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm space-y-2">
                 @if(!empty($st['icon']))
-                <div class="text-2xl text-sky-400 mb-1"><i class="{{ $st['icon'] }}"></i></div>
+                <div class="text-2xl text-purple-400 mb-1"><i class="{{ $st['icon'] }}"></i></div>
                 @endif
                 <div class="text-3xl sm:text-4xl font-extrabold text-white">{{ $st['number'] ?? '0' }}</div>
                 <div class="text-xs text-slate-300 font-semibold uppercase tracking-wider">{{ $st['label'] ?? '' }}</div>

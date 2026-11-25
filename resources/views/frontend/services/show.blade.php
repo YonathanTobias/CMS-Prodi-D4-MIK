@@ -52,7 +52,7 @@
             @if($service->procedure)
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 space-y-4">
                 <h2 class="text-lg font-bold text-slate-900 flex items-center">
-                    <i class="fa-solid fa-route mr-2 text-sky-600"></i> Alur Prosedur Pelayanan
+                    <i class="fa-solid fa-route mr-2 text-purple-600"></i> Alur Prosedur Pelayanan
                 </h2>
                 <div class="prose max-w-none text-slate-600 text-sm leading-relaxed whitespace-pre-line">
                     {{ $service->procedure }}
@@ -62,7 +62,7 @@
 
             <!-- Form Download if available -->
             @if($service->download_form_link)
-            <div class="bg-sky-50 border border-sky-200 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="bg-purple-50 border border-purple-200 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div class="space-y-1 text-center sm:text-left">
                     <h4 class="font-bold text-slate-900 text-sm">Formulir / Dokumen Pengajuan</h4>
                     <p class="text-xs text-slate-600">Unduh formulir permohonan untuk melengkapi berkas persyaratan.</p>
@@ -83,9 +83,9 @@
                     Jika Anda memiliki pertanyaan seputar prosedur atau kendala pengajuan layanan ini, silakan hubungi tim administrasi divisi.
                 </p>
                 <div class="space-y-2 text-xs text-slate-700">
-                    <div><i class="fa-regular fa-envelope text-sky-600 mr-2"></i> {{ get_setting('contact_email') }}</div>
-                    <div><i class="fa-solid fa-phone text-sky-600 mr-2"></i> {{ get_setting('contact_phone') }}</div>
-                    <div><i class="fa-solid fa-door-open text-sky-600 mr-2"></i> {{ get_setting('contact_room') }}</div>
+                    <div><i class="fa-regular fa-envelope text-purple-600 mr-2"></i> {{ get_setting('contact_email') }}</div>
+                    <div><i class="fa-solid fa-phone text-purple-600 mr-2"></i> {{ get_setting('contact_phone') }}</div>
+                    <div><i class="fa-solid fa-door-open text-purple-600 mr-2"></i> {{ get_setting('contact_room') }}</div>
                 </div>
                 <a href="{{ route('contact') }}" class="w-full py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs uppercase tracking-wider text-center block transition">
                     <i class="fa-brands fa-whatsapp mr-1.5"></i> Hubungi Kami

@@ -61,7 +61,7 @@
                         </div>
                     @endif
                     <div class="absolute top-3 left-3">
-                        <span class="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-white {{ $post->type == 'pengumuman' ? 'bg-amber-600' : 'bg-sky-600' }}">
+                        <span class="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-white {{ $post->type == 'pengumuman' ? 'bg-amber-600' : 'bg-purple-600' }}">
                             {{ $post->type }}
                         </span>
                     </div>
@@ -72,7 +72,7 @@
                         <span><i class="fa-regular fa-calendar mr-1"></i> {{ $post->published_at ? $post->published_at->translatedFormat('d M Y') : $post->created_at->format('d M Y') }}</span>
                         @if($post->category)
                             <span>•</span>
-                            <span class="text-sky-600 font-medium">{{ $post->category->name }}</span>
+                            <span class="text-purple-600 font-medium">{{ $post->category->name }}</span>
                         @endif
                     </div>
 

@@ -82,9 +82,9 @@ class DatabaseSeeder extends Seeder
             'parent_institution' => 'STIKES Panti Waluya Malang',
             
             // Visual & Branding
-            'theme_primary_color' => '#0d9488', // Teal-600 (Karakter Modern Health Informatics)
-            'theme_secondary_color' => '#0f766e', // Teal-700
-            'theme_accent_color' => '#0284c7', // Sky-600
+            'theme_primary_color' => '#7c3aed', // Violet-600 (Ungu Modern Elegan)
+            'theme_secondary_color' => '#4c1d95', // Violet-900 (Deep Royal Purple)
+            'theme_accent_color' => '#a855f7', // Purple-500
             'logo_url' => '',
             'hero_banner_title' => 'Program Studi Sarjana Terapan (D4) Manajemen Informasi Kesehatan',
             'hero_banner_subtitle' => 'Mencetak tenaga ahli rekam medis elektronik, casemix/pembiayaan kesehatan, dan analis data kesehatan yang adaptif terhadap transformasi digital kesehatan berlandaskan kasih.',

@@ -19,7 +19,7 @@
             <!-- Article Header -->
             <div class="space-y-3">
                 <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider text-white {{ $post->type == 'pengumuman' ? 'bg-amber-600' : 'bg-sky-600' }}">
+                    <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider text-white {{ $post->type == 'pengumuman' ? 'bg-amber-600' : 'bg-purple-600' }}">
                         {{ $post->type }}
                     </span>
                     @if($post->category)

@@ -306,8 +306,8 @@
             <!-- Status Akreditasi & Jenjang Badges -->
             <div class="flex flex-wrap justify-center gap-2 pt-2">
                 @if(get_setting('prodi_degree'))
-                <span class="inline-flex items-center px-3 py-1 rounded-lg text-xs font-bold bg-sky-50 dark:bg-sky-900/40 text-sky-800 dark:text-sky-300 border border-sky-200 dark:border-sky-700">
-                    <i class="fa-solid fa-award text-sky-600 dark:text-sky-400 mr-1.5"></i> Jenjang: {{ get_setting('prodi_degree') }}
+                <span class="inline-flex items-center px-3 py-1 rounded-lg text-xs font-bold bg-purple-50 dark:bg-purple-950/60 text-purple-800 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
+                    <i class="fa-solid fa-award text-purple-600 dark:text-purple-400 mr-1.5"></i> Jenjang: {{ get_setting('prodi_degree') }}
                 </span>
                 @endif
                 @if(get_setting('prodi_accreditation'))
@@ -413,42 +413,42 @@
 
             <!-- Role Highlights Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-6">
-                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-teal-500/50 transition group">
-                    <div class="w-10 h-10 rounded-xl bg-teal-500/15 text-teal-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
+                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-purple-500/60 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
                         <i class="fa-solid fa-hospital-user"></i>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white group-hover:text-teal-300 transition">HIM Manager</div>
+                        <div class="text-xs font-bold text-white group-hover:text-purple-300 transition">HIM Manager</div>
                         <div class="text-[11px] text-slate-400 mt-0.5">Manajer Rekam Medis & SIMRS</div>
                     </div>
                 </div>
 
-                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-sky-500/50 transition group">
-                    <div class="w-10 h-10 rounded-xl bg-sky-500/15 text-sky-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
+                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-fuchsia-500/60 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-fuchsia-500/20 text-fuchsia-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
                         <i class="fa-solid fa-file-medical"></i>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white group-hover:text-sky-300 transition">Clinical Coder</div>
+                        <div class="text-xs font-bold text-white group-hover:text-fuchsia-300 transition">Clinical Coder</div>
                         <div class="text-[11px] text-slate-400 mt-0.5">Kodifikasi Klinis & Casemix</div>
                     </div>
                 </div>
 
-                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-amber-500/50 transition group">
-                    <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
+                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-violet-500/60 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-violet-500/20 text-violet-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white group-hover:text-amber-300 transition">Data Analyst & QA</div>
+                        <div class="text-xs font-bold text-white group-hover:text-violet-300 transition">Data Analyst & QA</div>
                         <div class="text-[11px] text-slate-400 mt-0.5">Analis Data & Mutu Informasi</div>
                     </div>
                 </div>
 
-                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-purple-500/50 transition group">
-                    <div class="w-10 h-10 rounded-xl bg-purple-500/15 text-purple-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
+                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-indigo-500/60 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
                         <i class="fa-solid fa-laptop-medical"></i>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white group-hover:text-purple-300 transition">HIS Specialist</div>
+                        <div class="text-xs font-bold text-white group-hover:text-indigo-300 transition">HIS Specialist</div>
                         <div class="text-[11px] text-slate-400 mt-0.5">Spesialis RME & Interoperabilitas</div>
                     </div>
                 </div>
@@ -617,7 +617,7 @@
                             </div>
                         @endif
                         <div class="absolute top-3 left-3">
-                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-white {{ $post->type == 'pengumuman' ? 'bg-amber-600' : 'bg-sky-600' }}">
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-white {{ $post->type == 'pengumuman' ? 'bg-amber-600' : 'bg-purple-600' }}">
                                 {{ $post->type == 'pengumuman' ? 'Pengumuman' : 'Berita' }}
                             </span>
                         </div>
@@ -629,7 +629,7 @@
                             <span><i class="fa-regular fa-calendar mr-1"></i> {{ $post->published_at ? $post->published_at->translatedFormat('d M Y') : $post->created_at->format('d M Y') }}</span>
                             @if($post->category)
                                 <span>•</span>
-                                <span class="text-sky-600 font-medium">{{ $post->category->name }}</span>
+                                <span class="text-purple-600 dark:text-purple-400 font-medium">{{ $post->category->name }}</span>
                             @endif
                         </div>
 
@@ -668,7 +668,7 @@
             <div class="lg:col-span-7 space-y-6">
                 <div class="flex justify-between items-center">
                     <div>
-                        <div class="text-xs uppercase tracking-wider text-sky-400 font-bold mb-1">Agenda & Jadwal</div>
+                        <div class="text-xs uppercase tracking-wider text-purple-400 font-bold mb-1">Agenda & Jadwal</div>
                         <h2 class="text-2xl font-bold">Kegiatan yang Akan Datang</h2>
                     </div>
                     <a href="{{ route('events') }}" class="text-xs text-slate-300 hover:text-white font-medium flex items-center">
@@ -678,28 +678,28 @@
 
                 <div class="space-y-4">
                     @forelse($upcomingEvents as $evt)
-                    <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-4 sm:p-5 flex items-start space-x-4 hover:border-sky-500 transition">
+                    <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-4 sm:p-5 flex items-start space-x-4 hover:border-purple-500 transition">
                         <!-- Date Badge -->
                         <div class="w-14 h-14 rounded-xl bg-slate-700 text-center flex flex-col justify-center flex-shrink-0 border border-slate-600">
-                            <span class="text-xs font-bold uppercase text-sky-400">{{ $evt->start_date->format('M') }}</span>
+                            <span class="text-xs font-bold uppercase text-purple-400">{{ $evt->start_date->format('M') }}</span>
                             <span class="text-lg font-black text-white leading-tight">{{ $evt->start_date->format('d') }}</span>
                         </div>
 
                         <!-- Event Info -->
                         <div class="flex-grow space-y-1">
-                            <h3 class="text-sm sm:text-base font-bold text-white hover:text-sky-400 transition">
+                            <h3 class="text-sm sm:text-base font-bold text-white hover:text-purple-400 transition">
                                 <a href="{{ route('events.detail', $evt->slug) }}">{{ $evt->title }}</a>
                             </h3>
                             <div class="flex flex-wrap items-center gap-3 text-xs text-slate-400">
-                                <span><i class="fa-regular fa-clock text-sky-400 mr-1"></i> {{ $evt->start_date->format('H:i') }} WIB</span>
+                                <span><i class="fa-regular fa-clock text-purple-400 mr-1"></i> {{ $evt->start_date->format('H:i') }} WIB</span>
                                 @if($evt->location)
-                                    <span><i class="fa-solid fa-location-dot text-rose-400 mr-1"></i> {{ $evt->location }}</span>
+                                     <span><i class="fa-solid fa-location-dot text-rose-400 mr-1"></i> {{ $evt->location }}</span>
                                 @endif
                             </div>
                         </div>
 
                         @if($evt->registration_link)
-                            <a href="{{ $evt->registration_link }}" target="_blank" class="px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs flex-shrink-0 hidden sm:inline-block">
+                            <a href="{{ $evt->registration_link }}" target="_blank" class="px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs flex-shrink-0 hidden sm:inline-block">
                                 Daftar Kegiatan
                             </a>
                         @endif

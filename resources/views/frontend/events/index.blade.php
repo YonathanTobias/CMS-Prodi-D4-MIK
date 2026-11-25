@@ -25,7 +25,7 @@
             @forelse($upcomingEvents as $evt)
             <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition border border-slate-200 flex items-start space-x-5">
                 <div class="w-16 h-16 rounded-2xl bg-slate-900 text-white text-center flex flex-col justify-center flex-shrink-0 shadow">
-                    <span class="text-xs font-bold uppercase text-sky-400">{{ $evt->start_date->format('M') }}</span>
+                    <span class="text-xs font-bold uppercase text-purple-400">{{ $evt->start_date->format('M') }}</span>
                     <span class="text-2xl font-black leading-none">{{ $evt->start_date->format('d') }}</span>
                 </div>
 
@@ -35,7 +35,7 @@
                     </h3>
 
                     <div class="space-y-1 text-xs text-slate-500">
-                        <div class="flex items-center"><i class="fa-regular fa-clock text-sky-600 mr-2"></i> {{ $evt->start_date->format('H:i') }} WIB @if($evt->end_date) - {{ $evt->end_date->format('H:i') }} WIB @endif</div>
+                        <div class="flex items-center"><i class="fa-regular fa-clock text-purple-600 mr-2"></i> {{ $evt->start_date->format('H:i') }} WIB @if($evt->end_date) - {{ $evt->end_date->format('H:i') }} WIB @endif</div>
                         @if($evt->location)
                             <div class="flex items-center"><i class="fa-solid fa-location-dot text-rose-500 mr-2"></i> {{ $evt->location }}</div>
                         @endif
@@ -46,7 +46,7 @@
                             Detail Agenda <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
                         </a>
                         @if($evt->registration_link)
-                            <a href="{{ $evt->registration_link }}" target="_blank" class="px-2.5 py-1 rounded bg-sky-600 hover:bg-sky-700 text-white font-semibold text-[11px]">
+                            <a href="{{ $evt->registration_link }}" target="_blank" class="px-2.5 py-1 rounded bg-purple-600 hover:bg-purple-700 text-white font-semibold text-[11px]">
                                 Daftar Sekarang
                             </a>
                         @endif

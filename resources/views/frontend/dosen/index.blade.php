@@ -18,7 +18,7 @@
                 <span class="text-theme-primary font-bold">Dosen & Tendik</span>
             </nav>
 
-            <div class="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full text-sky-400 bg-sky-950/80 border border-sky-800/60">
+            <div class="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full text-purple-400 bg-purple-950/80 border border-purple-800/60">
                 <i class="fa-solid fa-users-line"></i>
                 <span>Sumber Daya Manusia Unggul</span>
             </div>
@@ -28,7 +28,7 @@
             </h1>
 
             <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-                Profil pendidik profesional, ners spesialis, dan tenaga kependidikan berdedikasi yang membimbing mahasiswa menjadi perawat kompeten dan berkarakter kasih.
+                Profil pendidik profesional, praktisi rekam medis & SIMRS, dan tenaga kependidikan berdedikasi yang membimbing mahasiswa menjadi sarjana terapan MIK kompeten dan berkarakter kasih.
             </p>
         </div>
     </div>
@@ -50,7 +50,7 @@
                 </a>
 
                 <a href="{{ route('dosen-tendik', array_merge(request()->except('type', 'page'), ['type' => 'dosen'])) }}"
-                   class="px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center {{ $type === 'dosen' ? 'bg-sky-600 text-white shadow-sm' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700' }}">
+                   class="px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center {{ $type === 'dosen' ? 'bg-purple-600 text-white shadow-sm' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700' }}">
                     <i class="fa-solid fa-user-doctor mr-2"></i>
                     <span>Dosen / Tenaga Pendidik</span>
                     <span class="ml-2 px-2 py-0.5 rounded-full text-[10px] {{ $type === 'dosen' ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300' }}">{{ $totalDosen }}</span>
@@ -101,7 +101,7 @@
                     <div class="flex items-start justify-between gap-3">
                         <!-- Photo Avatar -->
                         <div class="relative">
-                            <div class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 border-2 {{ $tm->type === 'tendik' ? 'border-emerald-500/40' : 'border-sky-500/40' }} shadow-sm group-hover:scale-105 transition-transform duration-300">
+                            <div class="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 border-2 {{ $tm->type === 'tendik' ? 'border-emerald-500/40' : 'border-purple-500/40' }} shadow-sm group-hover:scale-105 transition-transform duration-300">
                                 @if($tm->photo)
                                     <img src="{{ $tm->photo }}" alt="{{ $tm->name }}" class="w-full h-full object-cover" loading="lazy" decoding="async">
                                 @else
@@ -110,8 +110,8 @@
                                     </div>
                                 @endif
                             </div>
-                            <div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full flex items-center justify-center text-[11px] text-white shadow {{ $tm->type === 'tendik' ? 'bg-emerald-600' : 'bg-sky-600' }}">
-                                <i class="fa-solid {{ $tm->type === 'tendik' ? 'fa-user-gear' : 'fa-stethoscope' }}"></i>
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full flex items-center justify-center text-[11px] text-white shadow {{ $tm->type === 'tendik' ? 'bg-emerald-600' : 'bg-purple-600' }}">
+                                <i class="fa-solid {{ $tm->type === 'tendik' ? 'fa-user-gear' : 'fa-laptop-medical' }}"></i>
                             </div>
                         </div>
 
@@ -122,7 +122,7 @@
                                     Tendik
                                 </span>
                             @else
-                                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-sky-50 text-sky-700 dark:bg-sky-950/60 dark:text-sky-400 border border-sky-200 dark:border-sky-800">
+                                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-purple-50 text-purple-700 dark:bg-purple-950/60 dark:text-purple-400 border border-purple-200 dark:border-purple-800">
                                     Dosen
                                 </span>
                             @endif
@@ -172,8 +172,8 @@
                 <!-- Card Footer / Contacts -->
                 <div class="p-4 px-6 bg-slate-50/60 dark:bg-slate-900/60 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs">
                     @if($tm->email)
-                        <a href="mailto:{{ $tm->email }}" class="text-slate-600 dark:text-slate-400 hover:text-theme-primary dark:hover:text-sky-400 transition flex items-center truncate max-w-[190px]" title="{{ $tm->email }}">
-                            <i class="fa-regular fa-envelope mr-1.5 text-sky-600 text-xs"></i>
+                        <a href="mailto:{{ $tm->email }}" class="text-slate-600 dark:text-slate-400 hover:text-theme-primary dark:hover:text-purple-400 transition flex items-center truncate max-w-[190px]" title="{{ $tm->email }}">
+                            <i class="fa-regular fa-envelope mr-1.5 text-purple-600 dark:text-purple-400 text-xs"></i>
                             <span class="truncate">{{ $tm->email }}</span>
                         </a>
                     @else
@@ -206,17 +206,17 @@
         <!-- Banner Diagram Struktur Organisasi (Call to Action) -->
         <div class="mt-12 bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-6 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-slate-700/60">
             <div class="space-y-2 text-center md:text-left">
-                <div class="inline-flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full text-sky-400 bg-sky-950/80 border border-sky-800/60">
+                <div class="inline-flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full text-purple-400 bg-purple-950/80 border border-purple-800/60">
                     <i class="fa-solid fa-sitemap"></i>
                     <span>Hierarki Organisasi</span>
                 </div>
                 <h3 class="text-xl sm:text-2xl font-bold text-white">Lihat Bagan Struktur Organisasi Lengkap</h3>
                 <p class="text-xs sm:text-sm text-slate-300 max-w-xl">
-                    Ketahui tata kelola kepemimpinan, unit koordinasi sarjana & profesi, serta laboratorium pendidikan di Program Studi S1 Keperawatan & Profesi Ners.
+                    Ketahui tata kelola kepemimpinan, unit koordinasi sarjana terapan, serta laboratorium simulasi di Program Studi Sarjana Terapan (D4) Manajemen Informasi Kesehatan.
                 </p>
             </div>
             <a href="{{ route('profile') }}#struktur" class="px-6 py-3.5 rounded-2xl bg-white text-slate-900 hover:bg-slate-100 font-extrabold text-xs uppercase tracking-wider shadow-lg transition flex items-center whitespace-nowrap flex-shrink-0">
-                <i class="fa-solid fa-diagram-project mr-2 text-sky-600"></i> Buka Bagan Struktur Organisasi
+                <i class="fa-solid fa-diagram-project mr-2 text-purple-600"></i> Buka Bagan Struktur Organisasi
             </a>
         </div>
 

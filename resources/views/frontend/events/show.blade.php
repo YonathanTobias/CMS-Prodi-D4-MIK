@@ -24,14 +24,14 @@
                 <!-- Event Key Details Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100 text-xs text-slate-700">
                     <div class="flex items-start space-x-3">
-                        <i class="fa-regular fa-calendar text-sky-600 text-base mt-0.5"></i>
+                        <i class="fa-regular fa-calendar text-purple-600 text-base mt-0.5"></i>
                         <div>
                             <span class="font-bold block text-slate-900">Tanggal Pelaksanaan:</span>
                             <span>{{ $event->start_date->translatedFormat('l, d F Y') }}</span>
                         </div>
                     </div>
                     <div class="flex items-start space-x-3">
-                        <i class="fa-regular fa-clock text-sky-600 text-base mt-0.5"></i>
+                        <i class="fa-regular fa-clock text-purple-600 text-base mt-0.5"></i>
                         <div>
                             <span class="font-bold block text-slate-900">Waktu:</span>
                             <span>{{ $event->start_date->format('H:i') }} WIB @if($event->end_date) - {{ $event->end_date->format('H:i') }} WIB @endif</span>

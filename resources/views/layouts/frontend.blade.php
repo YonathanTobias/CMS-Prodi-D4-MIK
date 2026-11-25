@@ -49,8 +49,8 @@
     <!-- Dynamic Theme Color Variables -->
     <style>
         :root {
-            --color-primary: {{ get_setting('theme_primary_color', '#0e7490') }};
-            --color-secondary: {{ get_setting('theme_secondary_color', '#0369a1') }};
+            --color-primary: {{ get_setting('theme_primary_color', '#7c3aed') }};
+            --color-secondary: {{ get_setting('theme_secondary_color', '#4c1d95') }};
         }
     </style>
 </head>
@@ -60,10 +60,10 @@
     <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center space-x-4">
-                <span class="flex items-center"><i class="fa-solid fa-graduation-cap text-sky-400 mr-1.5"></i> {{ get_setting('parent_institution', 'STIKES Panti Waluya Malang') }}</span>
+                <span class="flex items-center"><i class="fa-solid fa-graduation-cap text-purple-400 mr-1.5"></i> {{ get_setting('parent_institution', 'STIKES Panti Waluya Malang') }}</span>
                 <span class="hidden md:inline-block text-slate-600">|</span>
-                <span class="hidden md:flex items-center"><i class="fa-regular fa-envelope text-sky-400 mr-1.5"></i> {{ get_setting('contact_email', 'info@pantiwaluya.ac.id') }}</span>
-                <span class="hidden lg:flex items-center"><i class="fa-solid fa-phone text-sky-400 mr-1.5"></i> {{ get_setting('contact_phone', '(0341) 569275') }}</span>
+                <span class="hidden md:flex items-center"><i class="fa-regular fa-envelope text-purple-400 mr-1.5"></i> {{ get_setting('contact_email', 'info@pantiwaluya.ac.id') }}</span>
+                <span class="hidden lg:flex items-center"><i class="fa-solid fa-phone text-purple-400 mr-1.5"></i> {{ get_setting('contact_phone', '(0341) 569275') }}</span>
             </div>
             <div class="flex items-center space-x-3">
                 @if(get_setting('social_instagram'))
@@ -273,13 +273,13 @@
                 <div>
                     <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Tautan Penting</h3>
                     <ul class="space-y-2.5 text-xs text-slate-400">
-                        <li><a href="{{ route('profile') }}" class="hover:text-white transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-sky-500"></i> Tentang & Struktur Organisasi</a></li>
+                        <li><a href="{{ route('profile') }}" class="hover:text-white transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-purple-400"></i> Tentang & Struktur Organisasi</a></li>
                         @if(get_setting('enable_services', '1') !== '0')
-                        <li><a href="{{ route('services') }}" class="hover:text-white transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-sky-500"></i> Layanan & Prosedur</a></li>
+                        <li><a href="{{ route('services') }}" class="hover:text-white transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-purple-400"></i> Layanan & Prosedur</a></li>
                         @endif
-                        <li><a href="{{ route('posts', ['type' => 'pengumuman']) }}" class="hover:text-white transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-sky-500"></i> Pengumuman Resmi</a></li>
-                        <li><a href="{{ route('events') }}" class="hover:text-white transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-sky-500"></i> Agenda & Jadwal Kegiatan</a></li>
-                        <li><a href="{{ route('documents') }}" class="hover:text-white transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-sky-500"></i> Download Dokumen & Formulir</a></li>
+                        <li><a href="{{ route('posts', ['type' => 'pengumuman']) }}" class="hover:text-white transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-purple-400"></i> Pengumuman Resmi</a></li>
+                        <li><a href="{{ route('events') }}" class="hover:text-white transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-purple-400"></i> Agenda & Jadwal Kegiatan</a></li>
+                        <li><a href="{{ route('documents') }}" class="hover:text-white transition flex items-center"><i class="fa-solid fa-chevron-right text-[10px] mr-2 text-purple-400"></i> Download Dokumen & Formulir</a></li>
                     </ul>
                 </div>
 
@@ -288,14 +288,14 @@
                     <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Jam Pelayanan</h3>
                     <div class="space-y-3 text-xs text-slate-400">
                         <div class="flex items-start space-x-2.5">
-                            <i class="fa-regular fa-clock text-sky-400 mt-0.5"></i>
+                            <i class="fa-regular fa-clock text-purple-400 mt-0.5"></i>
                             <div>
                                 <span class="font-medium text-slate-200 block">Waktu Operasional:</span>
                                 <span>{{ get_setting('operating_hours', 'Senin - Jumat: 08.00 - 16.00 WIB') }}</span>
                             </div>
                         </div>
                         <div class="flex items-start space-x-2.5">
-                            <i class="fa-solid fa-door-open text-sky-400 mt-0.5"></i>
+                            <i class="fa-solid fa-door-open text-purple-400 mt-0.5"></i>
                             <div>
                                 <span class="font-medium text-slate-200 block">Ruangan / Kantor:</span>
                                 <span>{{ get_setting('contact_room', 'Gedung Rektorat') }}</span>
@@ -309,15 +309,15 @@
                     <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Informasi Kontak</h3>
                     <div class="space-y-2.5 text-xs text-slate-400">
                         <p class="flex items-start space-x-2.5">
-                            <i class="fa-solid fa-location-dot text-sky-400 mt-0.5"></i>
+                            <i class="fa-solid fa-location-dot text-purple-400 mt-0.5"></i>
                             <span>{{ get_setting('contact_address', 'Jl. Yulius Usman No. 62, Kota Malang') }}</span>
                         </p>
                         <p class="flex items-center space-x-2.5">
-                            <i class="fa-regular fa-envelope text-sky-400"></i>
+                            <i class="fa-regular fa-envelope text-purple-400"></i>
                             <span>{{ get_setting('contact_email', 'info@pantiwaluya.ac.id') }}</span>
                         </p>
                         <p class="flex items-center space-x-2.5">
-                            <i class="fa-solid fa-phone text-sky-400"></i>
+                            <i class="fa-solid fa-phone text-purple-400"></i>
                             <span>{{ get_setting('contact_phone', '(0341) 569275') }}</span>
                         </p>
                         @if(get_setting('contact_whatsapp'))
