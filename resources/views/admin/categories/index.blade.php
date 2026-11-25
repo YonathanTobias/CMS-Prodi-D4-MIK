@@ -25,12 +25,12 @@
                     @csrf
                     <div class="space-y-1">
                         <label class="text-xs font-bold text-slate-700">Nama Kategori <span class="text-rose-500">*</span></label>
-                        <input type="text" name="name" required class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white" placeholder="Contoh: Buku Pedoman & SOP">
+                        <input type="text" name="name" required class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-theme-primary focus:bg-white" placeholder="Contoh: Buku Pedoman & SOP">
                     </div>
 
                     <div class="space-y-1">
                         <label class="text-xs font-bold text-slate-700">Peruntukan Tipe <span class="text-rose-500">*</span></label>
-                        <select name="type" required class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white">
+                        <select name="type" required class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-theme-primary focus:bg-white">
                             <option value="document">Dokumen / Unduhan</option>
                             <option value="post">Berita & Pengumuman</option>
                         </select>
@@ -38,7 +38,7 @@
 
                     <div class="space-y-1">
                         <label class="text-xs font-bold text-slate-700">Deskripsi Singkat</label>
-                        <textarea name="description" rows="2" class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white" placeholder="Keterangan singkat pengelompokan berkas..."></textarea>
+                        <textarea name="description" rows="2" class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-theme-primary focus:bg-white" placeholder="Keterangan singkat pengelompokan berkas..."></textarea>
                     </div>
 
                     <button type="submit" class="w-full py-2.5 rounded-xl bg-theme-primary text-white font-bold text-xs uppercase tracking-wider shadow hover:opacity-90 transition">
@@ -72,7 +72,7 @@
                                     @endif
                                 </td>
                                 <td class="p-4">
-                                    <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase {{ $cat->type == 'post' ? 'bg-sky-50 text-sky-700 border border-sky-200' : 'bg-emerald-50 text-emerald-700 border border-emerald-200' }}">
+                                    <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase {{ $cat->type == 'post' ? 'bg-purple-50 text-purple-700 border border-purple-200' : 'bg-indigo-50 text-indigo-700 border border-indigo-200' }}">
                                         {{ $cat->type == 'post' ? 'Artikel / Berita' : 'Dokumen / Unduhan' }}
                                     </span>
                                 </td>
@@ -88,7 +88,7 @@
                                                     editType = '{{ $cat->type }}'; 
                                                     editDesc = '{{ addslashes($cat->description ?? '') }}'; 
                                                     editAction = '{{ route('admin.categories.update', $cat->id) }}'" 
-                                            class="p-1.5 rounded-lg text-sky-600 hover:bg-sky-50 transition" 
+                                            class="p-1.5 rounded-lg text-purple-600 hover:bg-purple-50 transition" 
                                             title="Edit Kategori">
                                         <i class="fa-regular fa-pen-to-square"></i>
                                     </button>
@@ -144,12 +144,12 @@
 
                 <div class="space-y-1">
                     <label class="text-xs font-bold text-slate-700">Nama Kategori <span class="text-rose-500">*</span></label>
-                    <input type="text" name="name" x-model="editName" required class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white">
+                    <input type="text" name="name" x-model="editName" required class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-theme-primary focus:bg-white">
                 </div>
 
                 <div class="space-y-1">
                     <label class="text-xs font-bold text-slate-700">Peruntukan Tipe <span class="text-rose-500">*</span></label>
-                    <select name="type" x-model="editType" required class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white">
+                    <select name="type" x-model="editType" required class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-theme-primary focus:bg-white">
                         <option value="document">Dokumen / Unduhan</option>
                         <option value="post">Berita & Pengumuman</option>
                     </select>
@@ -157,7 +157,7 @@
 
                 <div class="space-y-1">
                     <label class="text-xs font-bold text-slate-700">Deskripsi Singkat</label>
-                    <textarea name="description" x-model="editDesc" rows="2" class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white" placeholder="Keterangan singkat..."></textarea>
+                    <textarea name="description" x-model="editDesc" rows="2" class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-theme-primary focus:bg-white" placeholder="Keterangan singkat..."></textarea>
                 </div>
 
                 <div class="pt-3 border-t flex justify-end space-x-2">
