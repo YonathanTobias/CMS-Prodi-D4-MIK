@@ -393,7 +393,7 @@
                         <i class="fa-solid fa-user-graduate"></i>
                         <span>Profil Lulusan Utama</span>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-extrabold text-white">Prospek & Peran Lulusan Ners</h3>
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-white">Prospek & Peran Lulusan Sarjana Terapan MIK</h3>
                     <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
                         {{ get_setting('prodi_graduate_profile') }}
                     </p>
@@ -413,43 +413,43 @@
 
             <!-- Role Highlights Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-6">
-                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-sky-500/50 transition group">
-                    <div class="w-10 h-10 rounded-xl bg-sky-500/15 text-sky-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
-                        <i class="fa-solid fa-hand-holding-medical"></i>
+                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-teal-500/50 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-teal-500/15 text-teal-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
+                        <i class="fa-solid fa-hospital-user"></i>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white group-hover:text-sky-300 transition">Care Provider</div>
-                        <div class="text-[11px] text-slate-400 mt-0.5">Asuhan Keperawatan Komprehensif</div>
+                        <div class="text-xs font-bold text-white group-hover:text-teal-300 transition">HIM Manager</div>
+                        <div class="text-[11px] text-slate-400 mt-0.5">Manajer Rekam Medis & SIMRS</div>
                     </div>
                 </div>
 
-                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-emerald-500/50 transition group">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
-                        <i class="fa-solid fa-comments"></i>
+                <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-sky-500/50 transition group">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/15 text-sky-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
+                        <i class="fa-solid fa-file-medical"></i>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white group-hover:text-emerald-300 transition">Communicator</div>
-                        <div class="text-[11px] text-slate-400 mt-0.5">Edukator & Promosi Kesehatan</div>
+                        <div class="text-xs font-bold text-white group-hover:text-sky-300 transition">Clinical Coder</div>
+                        <div class="text-[11px] text-slate-400 mt-0.5">Kodifikasi Klinis & Casemix</div>
                     </div>
                 </div>
 
                 <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-amber-500/50 transition group">
                     <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
-                        <i class="fa-solid fa-user-tie"></i>
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white group-hover:text-amber-300 transition">Manager & Leader</div>
-                        <div class="text-[11px] text-slate-400 mt-0.5">Pengelola Layanan & Tim Medis</div>
+                        <div class="text-xs font-bold text-white group-hover:text-amber-300 transition">Data Analyst & QA</div>
+                        <div class="text-[11px] text-slate-400 mt-0.5">Analis Data & Mutu Informasi</div>
                     </div>
                 </div>
 
                 <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-800/80 dark:bg-slate-800/60 border border-slate-700/80 hover:border-purple-500/50 transition group">
                     <div class="w-10 h-10 rounded-xl bg-purple-500/15 text-purple-400 flex items-center justify-center shrink-0 text-base group-hover:scale-105 transition">
-                        <i class="fa-solid fa-microscope"></i>
+                        <i class="fa-solid fa-laptop-medical"></i>
                     </div>
                     <div>
-                        <div class="text-xs font-bold text-white group-hover:text-purple-300 transition">Researcher</div>
-                        <div class="text-[11px] text-slate-400 mt-0.5">Peneliti Keperawatan Pemula</div>
+                        <div class="text-xs font-bold text-white group-hover:text-purple-300 transition">HIS Specialist</div>
+                        <div class="text-[11px] text-slate-400 mt-0.5">Spesialis RME & Interoperabilitas</div>
                     </div>
                 </div>
             </div>
